@@ -1,17 +1,15 @@
 
 ##	3D Web Graphics using WebGL and p5.js Libraries
 
-![3D Photo Cube](demos/photo-cube.gif)
-
-![3D TV](demos/3d-tv.gif)
+![WebGL Cube](demos/webgl-tv.gif)
 
 ![WebGL Earth](demos/earth.gif)
 
 ### Scripts in this directory:
 
-webgl-tv.html :		Loads Still Photos or Video in 3D Animated Cube
+webgl-cube.html :	3D Animated Cube built in WebGL + p5.js
 
-webgl-earth.html :	Simulates Earth View from Satellite using WebGL
+webgl-earth.html :	Earth View from Satellite using WebGL + p5.js
 
 more scripts coming soon..
 
