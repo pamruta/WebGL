@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Three-JS Textured Cube </title>
+  </head>
+	<body>
+		<script src="js/three.js"></script>
+		<script>
+
+		// creating scene
+    var scene = new THREE.Scene();
+    var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+
+    var renderer = new THREE.WebGLRenderer();
+    renderer.setSize( window.innerWidth, window.innerHeight );
+    document.body.appendChild( renderer.domElement );
+
+		// adding 3d cube to scene
+		var geometry = new THREE.BoxBufferGeometry(2, 2, 2);
+		const loader = new THREE.TextureLoader();
+
+		// creating texture materials
+  	const materials = [
+				new THREE.MeshBasicMaterial({map: loader.load('assets/pebbles/pebble-1.jpeg')}),
+				new THREE.MeshBasicMaterial({map: loader.load('assets/pebbles/pebble-2.jpeg')}),
+				new THREE.MeshBasicMaterial({map: loader.load('assets/pebbles/pebble-3.jpeg')}),
+				new THREE.MeshBasicMaterial({map: loader.load('assets/pebbles/pebble-4.jpeg')}),
+				new THREE.MeshBasicMaterial({map: loader.load('assets/pebbles/pebble-5.jpeg')}),
+				new THREE.MeshBasicMaterial({map: loader.load('assets/pebbles/pebble-6.jpeg')}),
+		];
+
+		var cube = new THREE.Mesh( geometry, materials );
+  	scene.add(cube);
+		camera.position.z = 5;
+
+		// rotate cube
+		var animate = function () {
+				requestAnimationFrame( animate );
+
+				cube.rotation.x += 0.01;
+				cube.rotation.y += 0.01;
+
+				renderer.render( scene, camera );
+			};
+
+			animate();
+		</script>
+	</body>
+</html>
