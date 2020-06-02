@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+  </head>
+  <body>
+    <script>
+
+      // initialize canvas
+      function setup() {
+        createCanvas(500, 500, WEBGL);
+        photo = loadImage("assets/map.jpeg");
+      }
+
+      // rotation angles
+      let theta_x = 0;
+      let theta_y = 0;
+      let theta_z = 0;
+      let photo;
+
+      // this function runs in loop
+      function draw() {
+        background(0);
+
+        // rotation of sphere
+        translate(0, 0, 0);
+        normalMaterial();
+        push();
+        rotateX(theta_x);
+        rotateY(theta_y);
+        rotateZ(theta_z);
+        texture(photo);
+        sphere(150);
+        pop();
+        theta_x += 0.005;
+        theta_y += 0.01;
+        theta_z += 0.01;
+      }
+    </script>
+  </body>
+</html>
