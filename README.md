@@ -5,7 +5,7 @@
 
 ![3D TV](demos/3d-tv.gif)
 
-![3D TV](demos/earth.gif)
+![WebGL Earth](demos/earth.gif)
 
 ### Scripts in this directory:
 
