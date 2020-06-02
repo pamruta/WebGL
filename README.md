@@ -7,9 +7,9 @@
 
 ### Scripts in this directory:
 
-webgl-cube.html :	3D Animated Cube built in WebGL + p5.js
+	webgl-cube.html :	3D Animated Cube built in WebGL + p5.js
 
-webgl-earth.html :	Earth View from Satellite using WebGL + p5.js
+	webgl-earth.html :	Earth View from Satellite using WebGL + p5.js
 
 more scripts coming soon..
 
