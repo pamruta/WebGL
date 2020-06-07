@@ -8,7 +8,6 @@
       // initialize canvas
       function setup() {
         createCanvas(500, 500, WEBGL);
-        photo = loadImage("assets/chaplin-1.png");
         movie = createVideo(['assets/movie-1.mp4']);
         movie.elt.muted = true;
         movie.loop();
@@ -19,7 +18,6 @@
       let theta_x = 0;
       let theta_y = 0;
       let theta_z = 0;
-      let img;
       let movie;
 
       // this function runs in loop
