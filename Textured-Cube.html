@@ -17,17 +17,17 @@
     document.body.appendChild( renderer.domElement );
 
 		// adding 3d cube to scene
-		var geometry = new THREE.BoxBufferGeometry(2, 2, 2);
+		var geometry = new THREE.BoxBufferGeometry(3, 3, 3);
 		const loader = new THREE.TextureLoader();
 
 		// creating texture materials
   	const materials = [
-				new THREE.MeshBasicMaterial({map: loader.load('assets/pebbles/pebble-1.jpeg')}),
-				new THREE.MeshBasicMaterial({map: loader.load('assets/pebbles/pebble-2.jpeg')}),
-				new THREE.MeshBasicMaterial({map: loader.load('assets/pebbles/pebble-3.jpeg')}),
-				new THREE.MeshBasicMaterial({map: loader.load('assets/pebbles/pebble-4.jpeg')}),
-				new THREE.MeshBasicMaterial({map: loader.load('assets/pebbles/pebble-5.jpeg')}),
-				new THREE.MeshBasicMaterial({map: loader.load('assets/pebbles/pebble-6.jpeg')}),
+				new THREE.MeshBasicMaterial({map: loader.load('assets/pebbles/pebble-1.jpg')}),
+				new THREE.MeshBasicMaterial({map: loader.load('assets/pebbles/pebble-2.jpg')}),
+				new THREE.MeshBasicMaterial({map: loader.load('assets/pebbles/pebble-3.jpg')}),
+				new THREE.MeshBasicMaterial({map: loader.load('assets/pebbles/pebble-4.jpg')}),
+				new THREE.MeshBasicMaterial({map: loader.load('assets/pebbles/pebble-5.jpg')}),
+				new THREE.MeshBasicMaterial({map: loader.load('assets/pebbles/pebble-6.jpg')}),
 		];
 
 		var cube = new THREE.Mesh( geometry, materials );
